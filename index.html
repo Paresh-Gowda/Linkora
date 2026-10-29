@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b0a" />
+  <meta name="description" content="Linkora transforms URLs into unique, shareable links." />
+
+  <title>Linkora - A Different Identity</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="navbar">
+    <a href="#" class="brand" aria-label="Linkora home">
+      <span class="brand-icon">↗</span>
+      <span>linkora<span class="brand-dot">.</span></span>
+    </a>
+
+    <a href="#transformer" class="nav-link">
+      Get started <span>↗</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="announcement">
+        <span class="status-dot"></span>
+        GIVE YOUR LINKS A NEW IDENTITY
+      </div>
+
+      <h1>
+        Your link.<br />
+        <span>A different identity.</span>
+      </h1>
+
+      <p class="hero-description">
+        Transform the way you share URLs.
+        One link goes in. A different identity comes out.
+      </p>
+
+      <section class="transformer-card" id="transformer">
+        <div class="card-heading">
+          <div>
+            <span class="eyebrow">LINK TRANSFORMER</span>
+            <h2>Transform your URL.</h2>
+          </div>
+
+          <div class="link-icon">⌁</div>
+        </div>
+
+        <form id="transform-form">
+          <label for="url-input">Your original URL</label>
+
+          <div class="input-wrap">
+            <span class="input-icon">↗</span>
+
+            <input
+              type="text"
+              id="url-input"
+              placeholder="Enter any website URL..."
+              autocomplete="url"
+              spellcheck="false"
+              required
+            />
+          </div>
+
+          <p class="input-hint" id="input-hint">
+            Enter a website such as paresh.xyz or a complete URL.
+          </p>
+
+          <button type="submit" class="transform-button" id="transform-button">
+            <span>Transform URL</span>
+            <span class="button-arrow">↗</span>
+          </button>
+        </form>
+
+        <div class="result-box" id="result-box" hidden>
+          <div class="result-top">
+            <div>
+              <span class="eyebrow">YOUR NEW LINK</span>
+              <p class="result-subtitle">Transformation complete</p>
+            </div>
+
+            <span class="result-check">✓</span>
+          </div>
+
+          <div class="result-link-row">
+            <a
+              href="#"
+              id="result-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+
+            <button type="button" class="copy-button" id="copy-button">
+              Copy link
+            </button>
+          </div>
+
+          <p class="result-message" id="result-message" aria-live="polite"></p>
+        </div>
+
+        <div class="error-message" id="error-message" role="alert" hidden></div>
+
+        <div class="card-footer">
+          <span><span class="tiny-check">✓</span> Simple transformation</span>
+          <span><span class="tiny-check">✓</span> Unique codes</span>
+          <span><span class="tiny-check">✓</span> Easy sharing</span>
+        </div>
+      </section>
+
+      <div class="trust-note">
+        <span class="lock-icon">◇</span>
+        A new identity for the links you share.
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="brand footer-brand">
+      <span class="brand-icon">↗</span>
+      <span>linkora<span class="brand-dot">.</span></span>
+    </a>
+
+    <p>A different identity for every link.</p>
+
+    <span class="copyright">© All rights reserved. Paresh R.</span>
+  </footer>
+</body>
+</html>
